@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tambah Tanaman – TanamanKu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="form" data-nav=tanaman>
+    <div class="app">
+        <aside id="side"></aside>
+        <main class="main">
+            <div class="top">
+                <h1 id="judul">Tambah Tanaman</h1>
+                <div class="who" id="who"></div>
+            </div>
+            <form id="f" class="card" style="max-width:640px">
+                <div class="row2">
+                    <div class="fg"><label>Nama Tanaman *</label><input id="nama" placeholder="Contoh: Monstera"></div>
+                    <div class="fg"><label>Jenis *</label><select id="jenis">
+                            <option value="">Pilih jenis</option>
+                            <option>Hias</option>
+                            <option>Bunga</option>
+                            <option>Sayur</option>
+                            <option>Buah</option>
+                        </select></div>
+                </div>
+                <div class="row2">
+                    <div class="fg"><label>Lokasi</label><input id="lokasi" placeholder="Teras / Kebun / Pot"></div>
+                    <div class="fg"><label>Tanggal Tanam</label><input id="tanggal" type="date"></div>
+                </div>
+                <div class="fg"><label>Kebutuhan Air</label><select id="air">
+                        <option>Rendah</option>
+                        <option selected>Sedang</option>
+                        <option>Tinggi</option>
+                    </select></div>
+                <div class="fg"><label>Catatan</label><textarea id="catatan" rows="3"
+                        placeholder="Catatan perawatan..."></textarea></div>
+                <div class="err" id="err"></div><button class="btn" type="submit">💾 Simpan</button> <a class="btn o"
+                    href="tanaman.html">Batal</a>
+            </form>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

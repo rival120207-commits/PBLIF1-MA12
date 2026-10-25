@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Manajemen Jadwal – TanamanKu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="jadwal">
+    <div class="app">
+        <aside id="side"></aside>
+        <main class="main">
+            <div class="top">
+                <h1 id="judul">Manajemen Jadwal</h1>
+                <div class="who" id="who"></div>
+            </div>
+            <div class="grid two">
+                <form id="fjd" class="card">
+                    <h3>➕ Buat Jadwal Baru</h3>
+                    <div class="fg"><label>Tanaman</label><select id="pl"></select></div>
+                    <div class="fg"><label>Jenis Aktivitas</label><select id="akt">
+                            <option>Penyiraman</option>
+                            <option>Pemupukan</option>
+                        </select></div>
+                    <div class="row2">
+                        <div class="fg"><label>Tanggal</label><input id="tgl" type="date" required></div>
+                        <div class="fg"><label>Pengulangan</label><select id="ulang">
+                                <option>Tidak</option>
+                                <option>Harian</option>
+                                <option>Mingguan</option>
+                            </select></div>
+                    </div>
+                    <button class="btn" type="submit">Simpan Jadwal</button>
+                </form>
+                <section class="card">
+                    <h3>📋 Daftar Jadwal</h3>
+                    <div class="bar"><select id="fa">
+                            <option value="">Semua aktivitas</option>
+                            <option>Penyiraman</option>
+                            <option>Pemupukan</option>
+                        </select><select id="fs">
+                            <option value="">Semua status</option>
+                            <option value="selesai">Selesai</option>
+                            <option value="belum">Belum selesai</option>
+                        </select></div>
+                    <div id="lj"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
